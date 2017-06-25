@@ -587,10 +587,10 @@ define(['settings', 'jquery', 'brush'], function (settings, jquery, brush) {
 
             $('#btn-toggle-brush').click(function () {
                 var toggleButton = this;
-                if (toggleButton.innerHTML === 'Clear Brush') {
-                    toggleButton.innerHTML = 'Shadow Brush';
-                } else {
+                if (toggleButton.innerHTML === 'Shroud Brush') {
                     toggleButton.innerHTML = 'Clear Brush';
+                } else {
+                    toggleButton.innerHTML = 'Shroud Brush';
                 }
                 fowBrush.toggle();
             });
@@ -619,10 +619,10 @@ define(['settings', 'jquery', 'brush'], function (settings, jquery, brush) {
                 var toggleButton = this;
                 if (toggleButton.innerHTML === 'Square Brush') {
                     toggleButton.innerHTML = 'Circle Brush';
-                    brushShape = 'square'
+                    brushShape = 'round'
                 } else {
                     toggleButton.innerHTML = 'Square Brush';
-                    brushShape = 'round'
+                    brushShape = 'square'
                 }
 
             });
